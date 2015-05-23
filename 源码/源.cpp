@@ -13,6 +13,7 @@
 using namespace std;
 int main()
 {
+	MAIN:
 	printf("程序初始化中，请稍后...\n");
 	printf("■");
 	system("title 工具箱V1.0.6    by--tzy/lyc/zzy");
@@ -32,40 +33,9 @@ int main()
 	printf("  *                       8.进行数学专业计算                             *\n");
 	printf("  *                       9.使用秒表计时                                 *\n");
 	printf("  *                       10.玩一点小游戏                                *\n");
+	printf("  *                       11.尚未完成的功能                              *\n");
+	printf("  *                       12.查看作者信息                                *\n");
 	printf("  ************************************************************************\n");
-	printf("                                                         程");
-	Sleep(100);
-	printf("序");
-    Sleep(100);
-	printf("开");
-	Sleep(100);
-	printf("发");
-	Sleep(100);
-	printf(":");
-	Sleep(100);
-	printf("T");
-	Sleep(100);
-	printf("Z");
-	Sleep(100);
-	printf("Y");
-	Sleep(100);
-	printf("/");
-	Sleep(100);
-	printf("L");
-	Sleep(100);
-	printf("Y");
-    Sleep(100);
-	printf("C\n");
-	printf("                                                         程");
-	Sleep(100);
-	printf("序");
-	Sleep(100);
-	printf("协助:");
-    Sleep(100);
-	printf("Z");
-	Sleep(100);
-	printf("Z");
-	printf("Y\n");
 	Sleep(100);
 	printf("================================================================================\n");                    
 	printf("请");
@@ -504,6 +474,41 @@ int main()
 	case 11:
 		{
 			system("start Diskclean.cmd");
+			break;
+		}
+	case 12:
+		{
+			Sleep(100);
+			printf("================================================================================\n");
+			printf("----程");
+			Sleep(50);
+			printf("序");
+			Sleep(60);
+			printf("开");
+			Sleep(70);
+			printf("发");
+			Sleep(80);
+			printf("：");
+			Sleep(70);
+			printf("TZY-");
+			Sleep(60);
+			printf("LYC");
+			Sleep(50);
+			printf("----协");
+			Sleep(50);
+			printf("作");
+			Sleep(50);
+			printf("开");
+			Sleep(60);
+			printf("发");
+			Sleep(70);
+			printf("：");
+			Sleep(80);
+			printf("ZZY");
+			Sleep(300);
+			printf("----------即将返回主菜单");
+				Sleep(5000);
+				goto MAIN;
 		}
 
       }
