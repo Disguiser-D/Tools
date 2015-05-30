@@ -13,7 +13,7 @@
 using namespace std;
 int main()
 {
-	MAIN:
+	M:
 	printf("程序初始化中，请稍后...\n");
 	Sleep(100);
 	printf("■");
@@ -245,7 +245,7 @@ int main()
 			system("cls");
 			printf("这个程序可以将FAT32磁盘格式转为NIFS格式！\n");
 			printf("由于FAT32无法支持单个4GB以上的文件所以建议转换！\n");
-			printf("转换不会损伤你的文件！");
+			printf("转换不会损伤你的文件！但最好备份数据");
 			system("set /p A=请输入你要转换的盘符:");
             system("Convert %A%/fs:ntfs");
 			printf("成功！");
@@ -515,12 +515,10 @@ int main()
 			Sleep(300);
 			printf("----------即将返回主菜单");
 				Sleep(5000);
-				goto MAIN;
+				goto M;
 		}
 
       }
     }
   }
 }
-
-//更改实例 Change TEST
