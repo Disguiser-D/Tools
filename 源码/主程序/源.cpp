@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable:4996)
+#pragma warning(disable:4244)
+#pragma warning(disable:4046)
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <windows.h> 
@@ -328,11 +330,13 @@ int main()
 				system("start RENwu.vbs");
 				system("pause");
 			}
+			{break;}
 	case 6:
 		{
 			system("Chkdsk");
 			system("pause");
 		}
+		{break;}
 	case 7:
 		{
 			system("cls");
