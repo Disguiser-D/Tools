@@ -20,7 +20,7 @@ int main()
 	Sleep(100);
 	printf("■");
 	Sleep(100);
-	system("title 工具箱V1.0.6");
+	system("title 工具箱V1.0.8");
 	Sleep(100);
 	printf("■");
 	Sleep(100);
@@ -44,6 +44,9 @@ int main()
 	printf("  *                       10.玩一点小游戏                                *\n");
 	printf("  *                       11.尚未完成的功能                              *\n");
 	printf("  *                       12.查看作者信息                                *\n");
+    printf("  *                       13.硬盘小工具                                  *\n");
+	printf("  *                       14.进程结束器                                  *\n");
+	printf("  *                       15.文件加密工具                                *\n");
 	printf("  ************************************************************************\n");
 	Sleep(100);
 	printf("==========================================================================\n");                    
@@ -470,6 +473,7 @@ int main()
 	case 10:
 		{
 			printf("输入1为吃豆子游戏，输入2为俄罗斯方块。");
+			printf("输入3位五子棋游戏\n");
 			int UU;
 			cin>>UU;
 			if (UU==1)
@@ -479,6 +483,10 @@ int main()
 			else if (UU==2)
 			{
 				system("start ConsoleApplication1.exe");
+			}
+			else if (UU==3)
+			{
+				system("start WZQ.exe");
 			}
 			break;
 		}
@@ -521,7 +529,68 @@ int main()
 				Sleep(5000);
 				goto M;
 		}
-
+	case 13:
+		{
+		printf("     硬盘小工具\n");
+		 printf("----------------------\n");
+		 printf("1.磁盘碎片整理\n");
+		 printf("2.检测Trim指令是否开启\n");
+		 printf("3.删除本机所有GHO文件\n");
+		 int D1;
+		 printf("请输入你的选项后摁回车确认：");
+		 cin>>D1;
+		 if (D1==1)
+		 {
+		 system("start Diskclean.cmd");		 
+		 }
+		 else if (D1==2)
+		 {
+			 system("fsutil behavior QUERY DisableDeleteNotify");
+		     printf("返回值1表示系统已经将开启Trim，若为1则是未开启。/n");		 
+		 }        
+		 else if (D1==3)
+		 {
+		 system("for %%i in (c: d: e: f: g: h: i: j: k: l: m: n:) do del %%i\*.gho /q /s /f /a");		 
+		 }
+		 break;		
+		}
+	case 14:
+		{
+          printf("---------------------------------\n");
+		  printf("         进程结束器              \n");
+		  printf("       1.常规结束进程            \n");
+		  printf("       2.常规结束进程树          \n");
+		  printf("       3.强制结束进程            \n");
+		  printf("       4.暴力句柄结束            \n");
+		  printf("---------------------------------\n");
+		  int Kill;
+          cin>>Kill;
+		  if (Kill==1)
+		  {
+			  system("start Kill1.cmd");
+		  }
+		  else if (Kill==2)
+		  {
+			  printf("start Kill2.cmd");
+		  }
+		  else if (Kill==3)
+		  {
+			  system("start Kill3.cmd");
+            
+		  }
+		  else if (Kill==4)
+		  {
+			  system("start Kill4.cmd");
+		     
+		  }
+		  break;
+		}
+	case 15:
+		{
+			system("cls");
+			system("jiami.exe");
+			printf("初始密码为123456  \n");
+		}
       }
     }
   }
