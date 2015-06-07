@@ -198,18 +198,6 @@ S:
                keybd_event(VK_RETURN, 0, 0, 0);
                keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
         }
-		   printf("返回程序输入1.退出输2.");
-		   int G;
-		   cin>>G;
-		   if (G==1)
-		   {
-		   system("cls");  
-		   goto S; 
-           }
-		   else if (G==2)
-		   {
-			    
-		   }
 		}
            else if(N==2)
         {
@@ -231,19 +219,6 @@ S:
               keybd_event(0x56, 0, 2, 0); //release v
 	          keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);//输入ENTER
         }
-          
-		   printf("返回程序输入1.退出输2.");
-		   int G;
-		   cin>>G;
-		   if (G==1)
-		   {
-		   system("cls");  
-		   goto S; 
-           }
-		   else if (G==2)
-		   {
-			    
-		   }
         }
 		break;
 		}
@@ -257,18 +232,6 @@ S:
             system("Convert %A%/fs:ntfs");
 			printf("成功！");
 			system("pause");
-		    printf("返回程序输入1.退出输2.");
-		   int G;
-		   cin>>G;
-		   if (G==1)
-		   {
-		   system("cls");  
-		   goto S; 
-           }
-		   else if (G==2)
-		   {
-			    
-		   }
 			break;
 		}
 	case 4:
@@ -552,7 +515,8 @@ S:
 		 else if (D1==2)
 		 {
 			 system("fsutil behavior QUERY DisableDeleteNotify");
-		     printf("返回值1表示系统已经将开启Trim，若为1则是未开启。/n");	 
+		     printf("返回值1表示系统已经将开启Trim，若为1则是未开启。/n");
+			 system("pause");
 		 }        
 		 else if (D1==3)
 		 {
