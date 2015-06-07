@@ -277,6 +277,7 @@ S:
 		}
 		else if (QQQ==7)
 		{
+			printf("ÇëÄÍÐÄµÈ´ý.......\n");
 			system("DKclose.cmd");
 		}
 		else if (QQQ==8)
