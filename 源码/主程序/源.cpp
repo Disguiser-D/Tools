@@ -2,6 +2,8 @@
 #pragma warning(disable:4996)
 #pragma warning(disable:4244)
 #pragma warning(disable:4046)
+#pragma warning(disable:4060)
+#pragma warning(disable:4129)
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <windows.h> 
