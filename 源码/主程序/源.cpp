@@ -238,7 +238,7 @@ S:
 	 {
 		system("cls");
 	    printf("____________________________________________\n");
-		printf("1.重置DNS输入                               |\n");
+		printf("1.重置DNS                                   |\n");
 		printf("2.设置代理服务器 为静态                     |\n");
 		printf("3.查看详细网络消息                          |\n");
 		printf("4.设置动态IP                                |\n");
@@ -273,6 +273,7 @@ S:
 		else if (QQQ==6)
 		{
 			system("netstat -a -b ");
+			system("pause");
 		}
 		else if (QQQ==7)
 		{
@@ -281,6 +282,7 @@ S:
 		else if (QQQ==8)
 		{
 			system("netstat -a");
+			system("pause");
 		}
           break;
 	 }
