@@ -591,6 +591,7 @@ S:
 			system("cls");
 			system("jiami.exe");
 			printf("初始密码为123456  \n");
+			break;
 		}
 	default:
 		{
@@ -599,6 +600,7 @@ S:
 			printf("即将返回菜单！");
 			Sleep(1000);
 			goto M;
+			break;
 		}
       }
     }
