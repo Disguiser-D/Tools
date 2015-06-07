@@ -532,6 +532,7 @@ S:
 			Sleep(300);
 			printf("----------即将返回主菜单");
 				Sleep(5000);
+				system("cls");
 				goto M;
 		}
 		case 13:
@@ -601,10 +602,11 @@ S:
 			Sleep(2000);
 			printf("即将返回菜单！");
 			Sleep(1000);
+			system("cls");
 			goto M;
 			break;
 		}
       }
     }
   }
- }
+}
