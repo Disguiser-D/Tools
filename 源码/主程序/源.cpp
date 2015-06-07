@@ -517,7 +517,7 @@ S:
 		 else if (D1==2)
 		 {
 			 system("fsutil behavior QUERY DisableDeleteNotify");
-		     printf("返回值1表示系统已经将开启Trim，若为1则是未开启。/n");
+		     printf("返回值1表示系统已经将开启Trim，若为1则是未开启。\n");
 			 system("pause");
 		 }        
 		 else if (D1==3)
