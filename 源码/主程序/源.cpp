@@ -15,7 +15,7 @@
 using namespace std;
 int main()
 {
-	M:
+S:
 	printf("程序初始化中，请稍后...\n");
 	Sleep(100);
 	printf("■");
@@ -30,7 +30,7 @@ int main()
 	Sleep(100);
 	system("mode con cols=80 lines=25");
 	Sleep(100);
-    S:
+    M:
 	printf("   ************************************************************************\n");
 	printf("   *                       1.修复无法粘贴文件                             *\n");
 	printf("   *                       2.QQ刷屏                                       *\n");
@@ -544,52 +544,16 @@ int main()
 		 cin>>D1;
 		 if (D1==1)
 		 {
-		 system("start Diskclean.cmd");
-		 printf("返回程序输入1.退出输2.");
-		 int G;
-		 cin>>G;
-		 if (G==1)
-		  {
-		   system("cls");  
-		   goto S; 
-          }
-		 else if (G==2)
-		  {
-			system("exit");    
-		  } 		 
+		 system("start Diskclean.cmd");		 
 		 }
 		 else if (D1==2)
 		 {
 			 system("fsutil behavior QUERY DisableDeleteNotify");
-		     printf("返回值1表示系统已经将开启Trim，若为1则是未开启。/n");
-			 printf("返回程序输入1.退出输2.");
-			 int G;
-		     cin>>G;
-		     if (G==1)
-		      {
-		        system("cls");  
-		        goto S; 
-              }
-		     else if (G==2)
-		      {
-			    system("exit");    
-		      } 		 
+		     printf("返回值1表示系统已经将开启Trim，若为1则是未开启。/n");	 
 		 }        
 		 else if (D1==3)
 		 {
 		 system("for %%i in (c: d: e: f: g: h: i: j: k: l: m: n:) do del %%i\*.gho /q /s /f /a");
-		 printf("返回程序输入1.退出输2.");
-		 int G;
-		 cin>>G;
-		 if (G==1)
-		  {
-		   system("cls");  
-		   goto S; 
-          }
-		 else if (G==2)
-		  {
-			system("exit");    
-		  } 		 
 		 }
 		 break;		
 		}
@@ -607,65 +571,18 @@ int main()
 		  if (Kill==1)
 		  {
 			  system("start Kill1.cmd");
-              printf("返回程序输入1.退出输2.");
-		      int G;
-		      cin>>G;
-		      if (G==1)
-		       {
-		         system("cls");  
-		         goto S; 
-               }
-		      else if (G==2)
-		       {
-			     system("exit");    
-		       }
 		  }
 		  else if (Kill==2)
 		  {
 			  printf("start Kill2.cmd");
-              printf("返回程序输入1.退出输2.");
-		      int G;
-		      cin>>G;
-		      if (G==1)
-		       {
-		         system("cls");  
-		         goto S; 
-               }
-		      else if (G==2)
-		       {
-			     system("exit");    
-		       }
 		  }
 		  else if (Kill==3)
 		  {
 			  system("start Kill3.cmd");
-              printf("返回程序输入1.退出输2.");
-		      int G;
-		      cin>>G;
-		      if (G==1)
-		       {
-		         system("cls");  
-		         goto S; 
-               }
-		      else if (G==2)
-		       {
-			     system("exit");    
-		       }
 		  }
 		  else if (Kill==4)
 		  {
 			  system("start Kill4.cmd");
-		      int G;
-		      cin>>G;
-		      if (G==1)
-		       {
-		         system("cls");  
-		         goto S; 
-               }
-		      else if (G==2)
-		       {
-			     system("exit");    
-		       }
 		  }
 		  break;
 		}
@@ -686,4 +603,4 @@ int main()
       }
     }
   }
-}
+ }
