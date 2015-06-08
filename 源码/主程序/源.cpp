@@ -41,7 +41,7 @@ S:
 	printf("   *                       5.禁用任务管理器                               *\n");
 	printf("   *                       6.修复损坏文件                                 *\n");
 	printf("   *                       7.查看电脑配置                                 *\n");
-	printf("   *                       8.进行数学物理专业计算                         *\n");
+	printf("   *                       8.进行数学专业计算                             *\n");
 	printf("   *                       9.使用秒表计时                                 *\n");
 	printf("   *                       10.玩一点小游戏                                *\n");
 	printf("   *                       11.尚未完成的功能                              *\n");
@@ -49,6 +49,7 @@ S:
 	printf("   *                       13.硬盘小工具                                  *\n");
 	printf("   *                       14.进程结束器                                  *\n");
 	printf("   *                       15.文件加密工具                                *\n");
+	printf("   *                       16.进行物理专业计算                            *\n");
 	printf("   ************************************************************************\n");
 	Sleep(100);
 	printf("============================================================================\n");                    
@@ -417,16 +418,8 @@ S:
 		     printf("%f\n",a/b);
 		     break;
 		     default:printf("Input error! \n");
-	       }
-          system("pause");
-         }
-		if (Y==4)
-		{
-			system("start 计算物体压强.exe");
-		}
-		else if (Y==5)
-		{
-			system("start 计算动能.exe");
+		     system("pause");
+		   }
 		}
          break;
 		}
@@ -583,6 +576,22 @@ S:
 			goto M;
 			break;
 		}
+	case 16:
+		{
+		printf("输入1计算物体在水中压强\n");
+		printf("输入2计算动能\n");
+		short A;
+		cin>>A;
+		if (A==1)
+		{
+			system("start 计算物体压强.exe");
+		}
+		else if (A==2)
+		{
+			system("start 计算动能.exe");
+		}
+		break;
+	   }
       }
     }
   }
