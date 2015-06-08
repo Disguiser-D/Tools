@@ -41,7 +41,7 @@ S:
 	printf("   *                       5.禁用任务管理器                               *\n");
 	printf("   *                       6.修复损坏文件                                 *\n");
 	printf("   *                       7.查看电脑配置                                 *\n");
-	printf("   *                       8.进行数学专业计算                             *\n");
+	printf("   *                       8.进行数学物理专业计算                         *\n");
 	printf("   *                       9.使用秒表计时                                 *\n");
 	printf("   *                       10.玩一点小游戏                                *\n");
 	printf("   *                       11.尚未完成的功能                              *\n");
@@ -356,6 +356,8 @@ S:
 		printf("输入1运用勾股定理计算斜边长\n");
 		printf("输入2使用海伦公式\n");
 		printf("输入3使用加减乘除计算器\n");
+		printf("输入4计算物体在水中压强\n");
+		printf("输入5计算动能\n");
 		int Y;
 		cin>>Y;
 		if(Y==1)
@@ -418,6 +420,14 @@ S:
 	       }
           system("pause");
          }
+		if (Y==4)
+		{
+			system("start 计算物体压强.exe");
+		}
+		else if (Y==5)
+		{
+			system("start 计算动能.exe");
+		}
          break;
 		}
 	case 9:
