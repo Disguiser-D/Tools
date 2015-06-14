@@ -7,6 +7,7 @@
 using namespace std;
 int main()
 {
+	system("title 计算动能   BY:TZY制作 ");
 	printf("请输入物体重量(单位KG)：");
 	long double m;
 	cin>>m;
