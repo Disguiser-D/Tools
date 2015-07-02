@@ -471,36 +471,17 @@ S:
 		}
 	case 12:
 		{
-			Sleep(100);
-			printf("================================================================================\n");
-			printf("----程");
-			Sleep(50);
-			printf("序");
-			Sleep(60);
-			printf("开");
-			Sleep(70);
-			printf("发");
-			Sleep(80);
-			printf("：");
-			Sleep(70);
-			printf("TZY-");
-			Sleep(60);
-			printf("LYC");
-			Sleep(50);
-			printf("----协");
-			Sleep(50);
-			printf("作");
-			Sleep(50);
-			printf("开");
-			Sleep(60);
-			printf("发");
-			Sleep(70);
-			printf("：");
-			Sleep(80);
-			printf("ZZY");
-			Sleep(300);
-			printf("----------即将返回主菜单");
-				Sleep(5000);
+			system("cls");
+			printf("   *******************************************************************\n");
+			printf("   *作者信息---------                                                *\n");
+			printf("   *            主要作者------                                       *\n");
+			printf("   *                      〉Tzy                                      *\n");
+			printf("   *                        〉Lyc                                    *\n");
+			printf("   *            参与贡献------                                       *\n");
+			printf("   *                      〉Zzy                                      *\n");
+			printf("   *                        〉Baidu[人数过多不再列举详情各部分源码内 *\n");
+			printf("   *                                                      返回主菜单 *\n");
+			printf("   *******************************************************************\n");
 				system("cls");
 				goto M;
 		}
