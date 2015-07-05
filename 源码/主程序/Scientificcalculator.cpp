@@ -7,6 +7,7 @@
 #include<dos.h>
 #include<conio.h>
 #include<cmath>
+#include <string.h>
 using namespace std;
 int main()
 {
@@ -36,8 +37,15 @@ int main()
 			  int num1;
 			  printf("请输入你要开方的数：");
 			  cin >> num1;
-			  printf("结果是：");
-			  cout << sqrt(num1) << endl;
+			  if (num1 >= 0)
+			  {
+				  printf("结果是：");
+				  cout << sqrt(num1) << endl;
+			  }
+			  else if (num1 < 0)
+			  {
+				  printf("错误！开方数不能小于0！！");
+			  }
 			  printf("输入1接着计算开方，输入2返回上级菜单，输入3退出程序。\n");
 			  printf("请输入你的选项并摁回车确认：");
 			  int a;
@@ -145,7 +153,7 @@ int main()
 	case 5:
 	{
 			  C5:
-			  int x1, x2, y1, y2;
+			  long double x1, x2, y1, y2;
 			  printf("请输入第一个坐标的X值：");
 			  cin >> x1;
 			  printf("\n");
@@ -160,7 +168,7 @@ int main()
 			  printf("\n");
 			  printf("请稍后...\n");
 			  printf("正在计算...\n");
-			  int x3, y3;
+			  long double x3, y3;
 			  x3 = x2 - x1;
 			  y3 = y2 - y1;
 			  long double k;
@@ -267,7 +275,14 @@ int main()
 			   Sleep(1000);
 			   printf("1\n");
 			   Sleep(1000);
-			   goto Q1;
+			   FILE *fp;
+			   fp = fopen("TEMP.cmd","w");
+			   fprintf(fp, "@echo off\n");
+			   fprintf(fp, "@start Scientificcalculator.exe\n");
+			   fclose(fp);
+			   system("TEMP.cmd");
+			   system("del TEMP.cmd");
+
 	}
     }
 	}
