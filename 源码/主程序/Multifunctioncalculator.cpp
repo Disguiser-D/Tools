@@ -1,3 +1,9 @@
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4996)
+#pragma warning(disable:4244)
+#pragma warning(disable:4046)
+#pragma warning(disable:4060)
+#pragma warning(disable:4129)
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <windows.h> 
@@ -11,7 +17,7 @@
 using namespace std;
 int main()
 {
-	int p1, o1,z1;
+	int p1, o1,;
 	FILE *fpi, *fpo;
 	extern int main(int  a, int b);
 	if ((fpi = fopen("color.txt", "r")) == NULL)
@@ -459,7 +465,7 @@ Q1:
 	default:
 	{
 			   printf("请输入有效的选项！！\n");
-			   printf("即将返回桌面...\n");
+			   printf("即将返回程序...\n");
 			   printf("3\n");
 			   Sleep(1000);
 			   printf("2\n");
