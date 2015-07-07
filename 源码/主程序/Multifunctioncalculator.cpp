@@ -17,7 +17,7 @@
 using namespace std;
 int main()
 {
-	int p1, o1,;
+	int p1, o1;
 	FILE *fpi, *fpo;
 	extern int main(int  a, int b);
 	if ((fpi = fopen("color.txt", "r")) == NULL)
