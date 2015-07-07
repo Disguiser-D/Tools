@@ -14,6 +14,7 @@
 #include<conio.h>
 #include<cmath>
 #include <string.h>
+#include<conio.h>
 using namespace std;
 int main()
 {
@@ -26,8 +27,13 @@ int main()
 	}
 	else
 	{
-		fscanf(fpi, "%d%d", &p1, &o1);
+		fscanf(fpi, "%d %d", &p1, &o1);
 		fclose(fpi);
+		char lib[300] = { 0 };
+		char p1[256] = { 0 };
+		char o1[256] = { 0 };
+		sprintf(lib, "color",p1,o1);
+		system(lib);
 	}
 	system("title 多功能计算器 制作：TZY\LYC");
 	void HideCursor();
@@ -47,6 +53,7 @@ Q1:
 	printf("9.使用海伦公式计算面积\n");
 	printf("10.使用加减乘除计算器\n");
 	printf("11.计算圆的周长与面积\n");
+	printf("12.程序颜色更改\n");
 	printf("请输入你的选项并摁回车确认：");
 	short num;
 	cin >> num;
@@ -432,16 +439,23 @@ Q1:
 	case 12:
 	{
 		   C12:
-			   printf("请输入你的颜色组合！\n");
-			   printf("详情参考命令提示符.\n");
-			   printf("请输入颜色代号的第一个数字：");
-			   cin >> p1;
-			   printf("请输入颜色代号的第二个数字：");
-			   cin >> o1;
-			   fpo = fopen("color.txt", "w");
-			   fprintf(fpo, "color is %d, %d\n",p1,o1);
-			   fclose(fpo);
-			   printf("设置已成功！重启程序后将生效！\n");
+			   printf("输入1将更改为黑底白字\n");
+			   printf("输入2更改为初始颜色\n");
+			   int k;
+			   cin >> k;
+			   if (k==1)
+			   {
+				   p1 = 0;
+				   o1 = 0;
+				   fpo = fopen("color.txt", "w");
+				   fprintf(fpo, "%d, %d\n", p1, o1);
+				   fclose(fpo);
+				   printf("设置已成功！重启程序后将生效！\n");
+			   }
+			   else if (k == 2)
+			   {
+				   remove("color.txt");
+			   }
 			   printf("输入1接着更改颜色，输入2返回上级菜单，输入3退出程序。\n");
 			   printf("请输入你的选项并摁回车确认：");
 			   int a;
