@@ -29,7 +29,7 @@ int main()
 		fscanf(fpi, "%d%d", &p1, &o1);
 		fclose(fpi);
 	}
-	system("title 多功能计算器 制作：TZY");
+	system("title 多功能计算器 制作：TZY\LYC");
 	void HideCursor();
 	{
 		CONSOLE_CURSOR_INFO cursor_info = { 1, 0 };
