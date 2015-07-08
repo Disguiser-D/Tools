@@ -18,6 +18,9 @@
 using namespace std;
 int main()
 {
+	system("del TEMP1.cmd");
+	system("del TEMP2.cmd");
+	system("cls");
 	int p1, o1;
 	FILE *fpi, *fpo;
 	extern int main(int  a, int b);
@@ -27,15 +30,11 @@ int main()
 	}
 	else
 	{
-		fscanf(fpi, "%d %d", &p1, &o1);
+		fscanf(fpi, "%d%d", &p1, &o1);
 		fclose(fpi);
-		char lib[300] = { 0 };
-		char p1[256] = { 0 };
-		char o1[256] = { 0 };
-		sprintf(lib, "color",p1,o1);
-		system(lib);
+		system("color 07");
 	}
-	system("title 多功能计算器 制作：TZY\LYC");
+	system("title 多功能计算器 制作：TZY    LYC");
 	void HideCursor();
 	{
 		CONSOLE_CURSOR_INFO cursor_info = { 1, 0 };
@@ -438,12 +437,11 @@ Q1:
 	}
 	case 12:
 	{
-		   C12:
 			   printf("输入1将更改为黑底白字\n");
 			   printf("输入2更改为初始颜色\n");
 			   int k;
 			   cin >> k;
-			   if (k==1)
+			   if (k == 1)
 			   {
 				   p1 = 0;
 				   o1 = 0;
@@ -451,30 +449,32 @@ Q1:
 				   fprintf(fpo, "%d, %d\n", p1, o1);
 				   fclose(fpo);
 				   printf("设置已成功！重启程序后将生效！\n");
+				   Sleep(2000);
 			   }
 			   else if (k == 2)
 			   {
-				   remove("color.txt");
-			   }
-			   printf("输入1接着更改颜色，输入2返回上级菜单，输入3退出程序。\n");
-			   printf("请输入你的选项并摁回车确认：");
-			   int a;
-			   cin >> a;
-			   if (a == 1)
-			   {
-				   system("cls");
-				   goto C12;
-			   }
-			   else if (a == 2)
-			   {
-				   system("cls");
-				   goto Q1;
-			   }
-			   else if (a == 3)
-			   {
-				   system("exit");
+				   FILE *fp1;
+				   fp1 = fopen("TEMP1.cmd", "w");
+				   fprintf(fp1, "@echo off\n");
+				   fprintf(fp1, "@start TEMP2.cmd\n");
+				   fclose(fp1);
+				   printf("设置已成功！重启程序后将生效！\n");
+				   Sleep(2000);
+				   system("start /min TEMP1.cmd");
+				   FILE *fp;
+				   fp = fopen("TEMP2.cmd", "w");
+				   fprintf(fp, "@echo off\n");
+				   fprintf(fp, "@echo 正在应用您设置的颜色...\n");
+				   fprintf(fp, "@echo 请稍后...n");
+				   fprintf(fp, "@ping www.baidu.com -n 5\n");
+				   fprintf(fp, "@del /F /S /Q color.txt\n");
+				   fprintf(fp, "@echo 已完成！\n");
+				   fprintf(fp, "@taskkill /f /im cmd.exe\n");
+				   fclose(fp);
+				   printf("设置已成功！重启程序后将生效！\n");
 			   }
 			   break;
+	}
 	}
 	default:
 	{
@@ -496,6 +496,9 @@ Q1:
 
 	}
 	}
-	}
 		return 0;
-	}
+}
+
+	
+	
+	
