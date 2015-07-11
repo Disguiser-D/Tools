@@ -53,6 +53,8 @@ Q1:
 	printf("10.使用加减乘除计算器\n");
 	printf("11.计算圆的周长与面积\n");
 	printf("12.程序颜色更改\n");
+	printf("13.计算物体在水中的压强\n");
+	printf("14.计算物体动能\n");
 	printf("请输入你的选项并摁回车确认：");
 	short num;
 	cin >> num;
@@ -475,6 +477,100 @@ Q1:
 			   }
 			   break;
 	}
+	}
+	case 13:
+	{
+			   C13:
+			   printf("请输入物体所在液体的密度(kg/每立方)：");
+			   long double L;
+			   cin >> L;
+			   printf("---------------------------------------------\n");
+			   printf("g取值为9.8还是10？输入1为9.8，输入2为10。\n");
+			   short a;
+			   cin >> a;
+			   if (a == 1)
+			   {
+				   printf("g取值9.8成功！");
+				   Sleep(1000);
+				   system("cls");
+				   float g = 9.8;
+				   printf("请输入物体浸入液体深度(M)：\n");
+				   long double h;
+				   cin >> h;
+				   printf("-------------------------\n");
+				   printf("请输入物体在水中的的受力面积(平方米)：");
+				   long double s;
+				   cin >> s;
+				   printf("输入完成！\n");
+				   system("cls");
+				   Sleep(1000);
+				   printf("正");
+				   Sleep(100);
+				   printf("在");
+				   Sleep(100);
+				   printf("计");
+				   Sleep(100);
+				   printf("算\n");
+				   long double P;
+				   P = L*g*h;
+				   long double F;
+				   F = P*s;
+				   printf("结果为：%f\n", F);
+				   printf("计算完成！\n");
+				   system("pause");
+				   printf("输入1接着计算，输入2返回上级菜单，输入3退出程序。\n");
+				   printf("请输入你的选项并摁回车确认：");
+				   int a;
+				   cin >> a;
+				   if (a == 1)
+				   {
+					   system("cls");
+					   goto C13;
+				   }
+				   else if (a == 2)
+				   {
+					   system("cls");
+					   goto Q1;
+				   }
+				   else if (a == 3)
+				   {
+					   system("exit");
+				   }
+				   break;
+	}
+	case 14:
+	{
+			   printf("请输入物体重量(单位KG)：");
+			   long double m;
+			   cin >> m;
+			   printf("请输入物体的速度 (千米每小时)：");
+			   long double v;
+			   cin >> v;
+			   printf("输入完成，正在计算...\n");
+			   long double vv;
+			   vv = v*v;
+			   long double Ek;
+			   Ek = m / 2 * vv;
+			   printf("结果为： %f\n", Ek);
+			   printf("计算完成！\n");
+			   system("pause");
+			   int a;
+			   cin >> a;
+			   if (a == 1)
+			   {
+				   system("cls");
+				   goto C14;
+			   }
+			   else if (a == 2)
+			   {
+				   system("cls");
+				   goto Q1;
+			   }
+			   else if (a == 3)
+			   {
+				   system("exit");
+			   }
+			   break;
 	}
 	default:
 	{
