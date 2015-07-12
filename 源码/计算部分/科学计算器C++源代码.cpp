@@ -480,7 +480,7 @@ Q1:
 	}
 	case 13:
 	{
-			   C13:
+		   C13:
 			   printf("请输入物体所在液体的密度(kg/每立方)：");
 			   long double L;
 			   cin >> L;
@@ -537,7 +537,7 @@ Q1:
 					   system("exit");
 				   }
 				   break;
-	}
+			   }
 	case 14:
 	{
 			   printf("请输入物体重量(单位KG)：");
@@ -593,8 +593,8 @@ Q1:
 	}
 	}
 		return 0;
-}
+	}
 
-	
-	
-	
+
+
+

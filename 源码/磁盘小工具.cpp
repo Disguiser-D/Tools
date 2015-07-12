@@ -11,29 +11,26 @@
 using namespace std;
 int main()
 {
-	printf("---------------------------------\n");
-	printf("         进程结束器              \n");
-	printf("       1.常规结束进程            \n");
-	printf("       2.常规结束进程树          \n");
-	printf("       3.强制结束进程            \n");
-	printf("       4.暴力句柄结束            \n");
-	printf("---------------------------------\n");
-	int Kill;
-	cin >> Kill;
-	if (Kill == 1)
+	printf("     硬盘小工具\n");
+	printf("----------------------\n");
+	printf("1.磁盘碎片整理\n");
+	printf("2.检测Trim指令是否开启\n");
+	printf("3.删除本机所有GHO文件\n");
+	int D1;
+	printf("请输入你的选项后摁回车确认：");
+	cin >> D1;
+	if (D1 == 1)
 	{
-		system("start Kill1.cmd");
+		system("start Diskclean.cmd");
 	}
-	else if (Kill == 2)
+	else if (D1 == 2)
 	{
-		printf("start Kill2.cmd");
+		system("fsutil behavior QUERY DisableDeleteNotify");
+		printf("返回值1表示系统已经将开启Trim，若为1则是未开启。\n");
+		system("pause");
 	}
-	else if (Kill == 3)
+	else if (D1 == 3)
 	{
-		system("start Kill3.cmd");
-	}
-	else if (Kill == 4)
-	{
-		system("start Kill4.cmd");
+		system("for %%i in (c: d: e: f: g: h: i: j: k: l: m: n:) do del %%i\*.gho /q /s /f /a");
 	}
 }
