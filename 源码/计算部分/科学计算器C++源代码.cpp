@@ -540,6 +540,7 @@ Q1:
 			   }
 	case 14:
 	{
+
 			   printf("请输入物体重量(单位KG)：");
 			   long double m;
 			   cin >> m;
@@ -556,20 +557,6 @@ Q1:
 			   system("pause");
 			   int a;
 			   cin >> a;
-			   if (a == 1)
-			   {
-				   system("cls");
-				   goto C14;
-			   }
-			   else if (a == 2)
-			   {
-				   system("cls");
-				   goto Q1;
-			   }
-			   else if (a == 3)
-			   {
-				   system("exit");
-			   }
 			   break;
 	}
 	default:
@@ -594,6 +581,7 @@ Q1:
 	}
 		return 0;
 	}
+}
 
 
 
