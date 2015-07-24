@@ -19,7 +19,7 @@ int main()
 	int a4 = 200;
 	int a5 = 205;
 	int a6 = 186;
-	printf("____________________________________________________\n");
+	printf("____________________________________________________\n");//此处为输出函数，可以输出想要的字符。
 	printf("|                 修复QQ掉线问题                   |\n");
 	printf("----------------------------------------------------\n");
 	printf("|                1.开始检查问题                    |\n");
@@ -73,8 +73,7 @@ int main()
 			char bt[2048];
 			char bt1[] = "@echo off";
 			char bt2[] = "netsh interface ip set dns name = \"本地连接\" source = dhcp ";
-			char bt3[] = "netsh interface ip set dns name = \"本地连接\" source = dhcp ";
-			sprintf(bt, "%s\n%s\n%s\n", bt1, bt2, bt3);
+			sprintf(bt, "%s\n%s\n", bt1, bt2);
 			system(bt);
 			system("pause");
 		}

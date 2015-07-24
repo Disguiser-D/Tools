@@ -32,7 +32,7 @@ int main()
 	system("cls");
 	printf("____________________________________________\n");
 	printf("1.重置DNS                                   |\n");
-	printf("2.设置代理服务器 为静态                     |\n");
+	printf("2.设置DNS为静态                             |\n");
 	printf("3.查看详细网络消息                          |\n");
 	printf("4.设置动态IP                                |\n");
 	printf("5.设置动态DNS                               |\n");
@@ -51,7 +51,14 @@ int main()
 	}
 	else if (QQQ == 2)
 	{
-		system("start Proxy Settings.cmd");
+		char bt[2048];
+		char bt1[] = "@echo off";
+		char bt2[] = "netsh interface ip del dns name=\"%a%\"all  ";
+		char bt3[] = "netsh interface ip set dns name=\"%a%\" source=static addr=202.96.128.116 ";
+		sprintf(bt, "%s\n%s\n", bt1, bt2,bt3);
+		system(bt);
+		printf("OK");
+		system("pause");
 	}
 	else if (QQQ == 3)
 	{
@@ -61,11 +68,23 @@ int main()
 	}
 	else if (QQQ == 4)
 	{
-		system("start Dynamic IP settings.cmd");
+		char bt[2048];
+		char bt1[] = "@echo off";
+		char bt2[] = "netsh interface ip set address name = \"本地连接\" source = dhcp ";
+		sprintf(bt, "%s\n%s\n", bt1, bt2);
+		system(bt);
+		printf("OK");
+		system("pause");
 	}
 	else if (QQQ == 5)
 	{
-		system("start Dynamic DNS Settings.cmd");
+		char bt[2048];
+		char bt1[] = "@echo off";
+		char bt2[] = "netsh interface ip set dns name = \"本地连接\" source = dhcp ";
+		sprintf(bt, "%s\n%s\n", bt1, bt2);
+		system(bt);
+		printf("OK");
+		system("pause");
 	}
 	else if (QQQ == 6)
 	{
