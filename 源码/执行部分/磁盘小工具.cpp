@@ -2,13 +2,10 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <windows.h> 
-#include<math.h>
+#include <math.h>
 #include <tchar.h>
 #include <iostream>
-#include <time.h> 
-#include<dos.h>
-#include<conio.h>
-#include<cmath>
+#include <winioctl.h>
 using namespace std;
 int main()
 {
@@ -17,7 +14,8 @@ int main()
 	printf("1.磁盘碎片整理\n");
 	printf("2.检测Trim指令是否开启\n");
 	printf("3.删除本机所有GHO文件\n");
-	printf("4.清空系统MBR \n");
+	printf("4.系统MBR助手 \n");
+	printf("----------------------\n");
 	int D1;
 	printf("请输入你的选项后摁回车确认：");
 	cin >> D1;
@@ -33,22 +31,86 @@ int main()
 	}
 	else if (D1 == 3)
 	{
-		system("for %%i in (c: d: e: f: g: h: i: j: k: l: m: n:) do del %%i\*.gho /q /s /f /a");
+		system("for %%i in (c: d: e: f: g: h: i: j: k: l: m: n:) do del %%i\\*.gho /q /s /f /a");
 	}
 	else if (D1 == 4)
 	{
-		printf("病毒即将清空系统MBR");
-		system("pause");
-		int res = MessageBox(NULL, TEXT("病毒即将清空系统MBR"), TEXT("yaomianfa的提醒"), MB_YESNO);//老规矩 加保险
-		if (res == IDYES)
+	a:
+		printf("---------------------------------------\n");
+		printf("|         *********************        |\n");
+		printf("|         *欢迎使用系统MBR助手*        |\n");
+		printf("|         *********************        |\n");
+		printf("|           1.清除系统MBR              |\n");
+		printf("|           2.备份系统MBR              |\n");
+		printf("|--------------------------------------|\n");
+		short num1;
+		printf("请输入您的选项并摁回车继续：");
+		cin >> num1;
+		if (num1 == 1)
 		{
-			FILE * fd = fopen("\\\\.\\PHYSICALDRIVE0", "rb+");/* 此句意思下面附上解释 */
-			char buffer[512] = { 0 };//定义一个字符串并初始化清空，因为MBR主引导共有512字节 所以大小定义为512
-			fseek(fd, 0, SEEK_SET); //因为MBR保存在磁盘的0柱面、0磁头、1扇区处，所以我们直接把文件指针偏移到文件开头 即MBR储存处
-			fwrite(buffer, 512, 1, fd); //将系统MBR进行清空
-			fclose(fd); //良好习惯 关闭打开的句柄
-			return 0;
+			printf("病毒即将清空系统MBR");
+			system("pause");
+			int res = MessageBox(NULL, TEXT("病毒即将清空系统MBR"), TEXT("yaomianfa的提醒"), MB_YESNO);//老规矩 加保险
+			if (res == IDYES)
+			{
+				FILE * fd = fopen("\\\\.\\PHYSICALDRIVE0", "rb+");/* 此句意思下面附上解释 */
+				char buffer[512] = { 0 };//定义一个字符串并初始化清空，因为MBR主引导共有512字节 所以大小定义为512
+				fseek(fd, 0, SEEK_SET); //因为MBR保存在磁盘的0柱面、0磁头、1扇区处，所以我们直接把文件指针偏移到文件开头 即MBR储存处
+				fwrite(buffer, 512, 1, fd); //将系统MBR进行清空
+				fclose(fd); //良好习惯 关闭打开的句柄
+				return 0;
+			}
+			else return 0;
 		}
-		else return 0;
+		else if (num1 == 2)
+		{
+			LPTSTR ReadMBR(BYTE* pMBR, UINT nLen, int Num);
+			void MBR();
+			{
+
+				BYTE MBR[512];
+
+				ReadMBR(MBR, 512, 0);
+
+				LPTSTR path = "d:\\mbr.dat";
+
+				FILE *fp;
+
+				if ((fp = fopen(path, "wb+")) != NULL)
+
+				{
+
+					fwrite(MBR, 1, 512, fp);
+
+					fclose(fp);
+
+					printf(" 读取成功在mbr.dat\n");
+				}
+
+				else
+
+				{
+
+
+					printf("creat file false!\n");
+
+				}
+			}  //主函数完成读mbr
+		}
+		else if (num1 != 1 && num1 != 2)
+		{
+			printf("请输入正确的选项！！");
+			Sleep(3000);
+			system("cls");
+			printf("     硬盘小工具\n");
+			printf("----------------------\n");
+			printf("1.磁盘碎片整理\n");
+			printf("2.检测Trim指令是否开启\n");
+			printf("3.删除本机所有GHO文件\n");
+			printf("4.系统MBR助手 \n");
+			printf("----------------------\n");
+			goto a;
+		}
 	}
+	return 0;
 }
