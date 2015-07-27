@@ -1,1 +1,0 @@
-dim s do until s=1 s=s+1 msgbox "关机失败！可能被杀毒软件拦截！",64 loop 
