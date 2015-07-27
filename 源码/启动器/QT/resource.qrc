@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file>image/vs.png</file>
-    <file>image/Folder.ico</file>
-    <file>image/BG.jpg</file>
-  </qresource>
-</RCC>
