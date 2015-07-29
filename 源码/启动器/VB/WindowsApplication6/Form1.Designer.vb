@@ -116,7 +116,7 @@ Partial Class Form1
         '
         'Button7
         '
-        Me.Button7.Font = New System.Drawing.Font("方正喵鸣", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button7.Location = New System.Drawing.Point(30, 187)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
@@ -166,7 +166,7 @@ Partial Class Form1
         Me.Label1.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.Label1.Location = New System.Drawing.Point(572, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(103, 26)
+        Me.Label1.Size = New System.Drawing.Size(119, 30)
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "作者：李远宸/谭泽宇" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "项目开源-详情见地址"
         '
@@ -174,7 +174,7 @@ Partial Class Form1
         '
         Me.TextBox1.Location = New System.Drawing.Point(376, 9)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(190, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(190, 21)
         Me.TextBox1.TabIndex = 12
         Me.TextBox1.Text = "https://github.com/PrivateO/Tools-"
         '
@@ -192,7 +192,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(108, 104)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 13)
+        Me.Label2.Size = New System.Drawing.Size(109, 15)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "初始密码：123456"
         '
@@ -300,7 +300,7 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(108, 191)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 13)
+        Me.Label3.Size = New System.Drawing.Size(55, 15)
         Me.Label3.TabIndex = 26
         Me.Label3.Text = "谨慎使用"
         '
@@ -309,7 +309,7 @@ Partial Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(108, 309)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(47, 13)
+        Me.Label4.Size = New System.Drawing.Size(55, 15)
         Me.Label4.TabIndex = 27
         Me.Label4.Text = "谨慎使用"
         '
@@ -318,7 +318,7 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(285, 17)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 13)
+        Me.Label5.Size = New System.Drawing.Size(55, 15)
         Me.Label5.TabIndex = 28
         Me.Label5.Text = "谨慎使用"
         '
@@ -327,7 +327,7 @@ Partial Class Form1
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(285, 104)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(47, 13)
+        Me.Label6.Size = New System.Drawing.Size(55, 15)
         Me.Label6.TabIndex = 29
         Me.Label6.Text = "谨慎使用"
         '
@@ -336,7 +336,7 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(285, 162)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(47, 13)
+        Me.Label7.Size = New System.Drawing.Size(55, 15)
         Me.Label7.TabIndex = 30
         Me.Label7.Text = "谨慎使用"
         '
@@ -345,7 +345,7 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(285, 191)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(47, 13)
+        Me.Label8.Size = New System.Drawing.Size(55, 15)
         Me.Label8.TabIndex = 31
         Me.Label8.Text = "谨慎使用"
         '
@@ -354,7 +354,7 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(285, 216)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(47, 13)
+        Me.Label9.Size = New System.Drawing.Size(55, 15)
         Me.Label9.TabIndex = 32
         Me.Label9.Text = "谨慎使用"
         '
@@ -363,7 +363,7 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(285, 279)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(77, 13)
+        Me.Label10.Size = New System.Drawing.Size(91, 15)
         Me.Label10.TabIndex = 33
         Me.Label10.Text = "此三项尚未启用"
         '
@@ -371,17 +371,17 @@ Partial Class Form1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(394, 326)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 27)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 21)
         Me.DateTimePicker1.TabIndex = 34
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(5.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.BackgroundImage = Global.WindowsApplication6.My.Resources.Resources.vs
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(686, 361)
+        Me.ClientSize = New System.Drawing.Size(707, 361)
         Me.ControlBox = False
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label10)
@@ -418,7 +418,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Font = New System.Drawing.Font("方正喵鸣", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "Form1"
