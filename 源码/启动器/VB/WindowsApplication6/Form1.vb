@@ -8,8 +8,8 @@
         Shell("Game/Anakonda.exe", "1")
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-        Shell("SF/碎片整理.EXE", "1")
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Shell("SF/重启系统外壳桌面程序", "1")
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -37,15 +37,18 @@
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        Shell("SF/QQ.exe""1")
+        Shell("SF/QQ.exe", "1")
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         Shell("SF/查看电脑配置.exe", "1")
     End Sub
 
-    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         Shell("SF/磁盘格式转换.exe", "1")
+    End Sub
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Shell("SF/磁盘小工具.exe", "1")
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
@@ -71,12 +74,6 @@
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
         Shell("SF/修复损坏文件.exe", "1")
     End Sub
-
-    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
-        Shell("SF/重启系统外壳桌面程序.exe", "1")
-    End Sub
-
-
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
 
     End Sub
