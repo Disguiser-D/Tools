@@ -15,6 +15,7 @@ int main()
 	printf("2.检测Trim指令是否开启\n");
 	printf("3.删除本机所有GHO文件\n");
 	printf("4.系统MBR助手 \n");
+	printf("5.清理垃圾 \n");
 	printf("----------------------\n");
 	int D1;
 	printf("请输入你的选项后摁回车确认：");
@@ -35,18 +36,11 @@ int main()
 	}
 	else if (D1 == 4)
 	{
-	a:
 		printf("---------------------------------------\n");
 		printf("|         *********************        |\n");
 		printf("|         *欢迎使用系统MBR助手*        |\n");
 		printf("|         *********************        |\n");
-		printf("|           1.清除系统MBR              |\n");
-		printf("|           2.备份系统MBR              |\n");
 		printf("|--------------------------------------|\n");
-		short num1;
-		printf("请输入您的选项并摁回车继续：");
-		cin >> num1;
-		if (num1 == 1)
 		{
 			printf("病毒即将清空系统MBR");
 			system("pause");
@@ -62,55 +56,9 @@ int main()
 			}
 			else return 0;
 		}
-		else if (num1 == 2)
-		{
-			LPTSTR ReadMBR(BYTE* pMBR, UINT nLen, int Num);
-			void MBR();
-			{
-
-				BYTE MBR[512];
-
-				ReadMBR(MBR, 512, 0);
-
-				LPTSTR path = "d:\\mbr.dat";
-
-				FILE *fp;
-
-				if ((fp = fopen(path, "wb+")) != NULL)
-
-				{
-
-					fwrite(MBR, 1, 512, fp);
-
-					fclose(fp);
-
-					printf(" 读取成功在mbr.dat\n");
-				}
-
-				else
-
-				{
-
-
-					printf("creat file false!\n");
-
-				}
-			}  //主函数完成读mbr
-		}
-		else if (num1 != 1 && num1 != 2)
-		{
-			printf("请输入正确的选项！！");
-			Sleep(3000);
-			system("cls");
-			printf("     硬盘小工具\n");
-			printf("----------------------\n");
-			printf("1.磁盘碎片整理\n");
-			printf("2.检测Trim指令是否开启\n");
-			printf("3.删除本机所有GHO文件\n");
-			printf("4.系统MBR助手 \n");
-			printf("----------------------\n");
-			goto a;
-		}
 	}
-	return 0;
+	else if (D1 == 5)
+	{
+		system("cleanmgr");
+	}
 }

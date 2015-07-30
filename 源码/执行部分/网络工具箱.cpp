@@ -37,10 +37,9 @@ int main()
 	printf("4.设置动态IP                                |\n");
 	printf("5.设置动态DNS                               |\n");
 	printf("6.查看当前连接到本机的端口（内网）          |\n");
-	printf("7.关闭危险端口                              |\n");
-	printf("8.查看当前连接到本机的端口（公网）          |\n");
-	printf("9.设置程序颜色                              |\n");
-	printf("10.网络稳定性测试                           |\n");
+	printf("7.查看当前连接到本机的端口（公网）          |\n");
+	printf("8.设置程序颜色                              |\n");
+	printf("9.网络稳定性测试                           |\n");
 	printf("---------------------------------------------\n");
 	int QQQ;
 	cin >> QQQ;
@@ -94,16 +93,11 @@ int main()
 	}
 	else if (QQQ == 7)
 	{
-		printf("请耐心等待.......\n");
-		system("DKclose.cmd");
-	}
-	else if (QQQ == 8)
-	{
 		system("netstat -a");
 		printf("扫描已完成！\n");
 		system("pause");
 	}
-	else if (QQQ == 9)
+	else if (QQQ == 8)
 	{
 		printf("输入1将更改为黑底白字\n");
 		printf("输入2更改为初始颜色\n");
@@ -142,7 +136,7 @@ int main()
 			printf("设置已成功！重启程序后将生效！\n");
 		}
 	}
-	else if (QQQ == 10)
+	else if (QQQ == 9)
 	{
 		system("ping 180.97.33.108 -n 200");
 		system("pause");

@@ -24,7 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -68,15 +67,6 @@ Partial Class Form1
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "贪吃蛇"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(30, 42)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "磁盘整理"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -261,7 +251,7 @@ Partial Class Form1
         '
         'Button20
         '
-        Me.Button20.Location = New System.Drawing.Point(204, 215)
+        Me.Button20.Location = New System.Drawing.Point(30, 42)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(75, 23)
         Me.Button20.TabIndex = 22
@@ -270,7 +260,7 @@ Partial Class Form1
         '
         'Button21
         '
-        Me.Button21.Location = New System.Drawing.Point(204, 244)
+        Me.Button21.Location = New System.Drawing.Point(204, 215)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(75, 23)
         Me.Button21.TabIndex = 23
@@ -279,7 +269,7 @@ Partial Class Form1
         '
         'Button22
         '
-        Me.Button22.Location = New System.Drawing.Point(204, 274)
+        Me.Button22.Location = New System.Drawing.Point(204, 245)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(75, 23)
         Me.Button22.TabIndex = 24
@@ -288,7 +278,7 @@ Partial Class Form1
         '
         'Button23
         '
-        Me.Button23.Location = New System.Drawing.Point(204, 304)
+        Me.Button23.Location = New System.Drawing.Point(204, 271)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(75, 23)
         Me.Button23.TabIndex = 25
@@ -352,7 +342,7 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(285, 216)
+        Me.Label9.Location = New System.Drawing.Point(108, 45)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(55, 15)
         Me.Label9.TabIndex = 32
@@ -378,7 +368,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.BackColor = System.Drawing.SystemColors.ScrollBar
         Me.BackgroundImage = Global.WindowsApplication6.My.Resources.Resources.vs
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(707, 361)
@@ -416,7 +406,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -428,7 +417,6 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
