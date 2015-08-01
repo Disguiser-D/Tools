@@ -8,3 +8,7 @@ C:\Users\TZY\Documents\GitHub\Tools-\源码\启动器\VB\WindowsApplication6\obj
 C:\Users\TZY\Documents\GitHub\Tools-\源码\启动器\VB\WindowsApplication6\obj\Release\WindowsApplication6.exe
 C:\Users\TZY\Documents\GitHub\Tools-\源码\启动器\VB\WindowsApplication6\obj\Release\WindowsApplication6.xml
 C:\Users\TZY\Documents\GitHub\Tools-\源码\启动器\VB\WindowsApplication6\obj\Release\WindowsApplication6.pdb
+C:\Users\TZY\Desktop\Tools-\源码\启动器\VB\WindowsApplication6\bin\Release\WindowsApplication6.exe.config
+C:\Users\TZY\Desktop\Tools-\源码\启动器\VB\WindowsApplication6\obj\Release\WindowsApplication6.exe
+C:\Users\TZY\Desktop\Tools-\源码\启动器\VB\WindowsApplication6\obj\Release\WindowsApplication6.xml
+C:\Users\TZY\Desktop\Tools-\源码\启动器\VB\WindowsApplication6\obj\Release\WindowsApplication6.pdb
