@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+#pragma comment (lib,"ÍøÂç¹¤¾ßÏä.lib")
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <windows.h> 
