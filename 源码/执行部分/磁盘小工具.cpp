@@ -59,6 +59,19 @@ int main()
 	}
 	else if (D1 == 5)
 	{
+		printf("正在清理...");
 		system("cleanmgr");
+		printf("是否进行深度垃圾清理？\n");
+		printf("输入1进行清理，输入2不进行清理.\n");
+		short q;
+		cin >> q;
+		if (q == 1)
+		{
+			system("start 工具箱调用.cmd");
+		}
+		else if (q == 2)
+		{
+			system("exit");
+		}
 	}
 }
