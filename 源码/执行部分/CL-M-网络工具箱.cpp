@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS
-#pragma comment (lib,"网络工具箱.lib")
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <windows.h> 
@@ -41,6 +40,7 @@ int main()
 	printf("7.查看当前连接到本机的端口（公网）          |\n");
 	printf("8.设置程序颜色                              |\n");
 	printf("9.网络稳定性测试                            |\n");
+	printf("10.DDOS攻击器                               |\n");
 	printf("---------------------------------------------\n");
 	int QQQ;
 	cin >> QQQ;
@@ -141,5 +141,9 @@ int main()
 	{
 		system("ping 180.97.33.108 -n 200");
 		system("pause");
+	}
+	else if (QQQ = 10)
+	{
+		system("start CL-网络工具箱.exe");
 	}
 }
