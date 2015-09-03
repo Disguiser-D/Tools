@@ -44,7 +44,7 @@ Partial Class Form1
         Me.Button18 = New System.Windows.Forms.Button()
         Me.Button19 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button21 = New System.Windows.Forms.Button()
+        Me.Button20 = New System.Windows.Forms.Button()
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -64,7 +64,7 @@ Partial Class Form1
         Me.Button1.Location = New System.Drawing.Point(30, 13)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
+        Me.Button1.TabIndex = 1
         Me.Button1.Text = "贪吃蛇"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -149,7 +149,7 @@ Partial Class Form1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(119, 30)
         Me.Label1.TabIndex = 11
-        Me.Label1.Text = "作者：李远宸/谭泽宇" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "项目开源-详情见地址"
+        Me.Label1.Text = "作者：LYC/TZY" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "项目开源-详情见地址"
         '
         'TextBox1
         '
@@ -249,14 +249,14 @@ Partial Class Form1
         Me.Button2.Text = "重启桌面"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button21
+        'Button20
         '
-        Me.Button21.Location = New System.Drawing.Point(204, 215)
-        Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(75, 23)
-        Me.Button21.TabIndex = 23
-        Me.Button21.Text = "Button21"
-        Me.Button21.UseVisualStyleBackColor = True
+        Me.Button20.Location = New System.Drawing.Point(204, 215)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(75, 23)
+        Me.Button20.TabIndex = 20
+        Me.Button20.Text = "病毒工具箱"
+        Me.Button20.UseVisualStyleBackColor = True
         '
         'Button22
         '
@@ -344,9 +344,9 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(285, 279)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(91, 15)
+        Me.Label10.Size = New System.Drawing.Size(86, 15)
         Me.Label10.TabIndex = 33
-        Me.Label10.Text = "此三项尚未启用"
+        Me.Label10.Text = "此2项尚未启用"
         '
         'DateTimePicker1
         '
@@ -384,7 +384,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button23)
         Me.Controls.Add(Me.Button22)
-        Me.Controls.Add(Me.Button21)
+        Me.Controls.Add(Me.Button20)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button19)
         Me.Controls.Add(Me.Button18)
@@ -437,7 +437,7 @@ Partial Class Form1
     Friend WithEvents Button18 As System.Windows.Forms.Button
     Friend WithEvents Button19 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button21 As System.Windows.Forms.Button
+    Friend WithEvents Button20 As System.Windows.Forms.Button
     Friend WithEvents Button22 As System.Windows.Forms.Button
     Friend WithEvents Button23 As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
