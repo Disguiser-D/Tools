@@ -3,7 +3,7 @@
         End
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Shell("Game/Anakonda.exe", "1")
+        Shell("game.exe", "1")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -19,11 +19,11 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Shell("Game/gobang.exe", "1")
+        Shell("SF/BUG.exe", "1")
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Shell("Game/pacman.exe", "1")
+        Shell("SF/feed.exe", "1")
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click

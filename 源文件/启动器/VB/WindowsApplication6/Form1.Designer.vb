@@ -65,7 +65,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "贪吃蛇"
+        Me.Button1.Text = "游戏"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button3
@@ -92,7 +92,7 @@ Partial Class Form1
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 5
-        Me.Button5.Text = "五子棋"
+        Me.Button5.Text = "访问官网"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button6
@@ -101,7 +101,7 @@ Partial Class Form1
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 6
-        Me.Button6.Text = "吃豆豆"
+        Me.Button6.Text = "提交BUG"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
