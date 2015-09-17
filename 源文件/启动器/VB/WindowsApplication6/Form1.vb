@@ -75,6 +75,9 @@
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
         Shell("病毒工具箱.exe", "1")
     End Sub
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        Shell("程序更新.exe", "1")
+    End Sub
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
 
     End Sub

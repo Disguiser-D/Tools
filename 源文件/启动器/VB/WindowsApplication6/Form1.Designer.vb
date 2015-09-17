@@ -246,7 +246,7 @@ Partial Class Form1
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "重启桌面"
+        Me.Button2.Text = "系统杂项"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button20
@@ -263,8 +263,8 @@ Partial Class Form1
         Me.Button22.Location = New System.Drawing.Point(204, 245)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(75, 23)
-        Me.Button22.TabIndex = 24
-        Me.Button22.Text = "Button22"
+        Me.Button22.TabIndex = 22
+        Me.Button22.Text = "程序更新"
         Me.Button22.UseVisualStyleBackColor = True
         '
         'Button23
@@ -344,9 +344,9 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(285, 279)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(86, 15)
+        Me.Label10.Size = New System.Drawing.Size(79, 15)
         Me.Label10.TabIndex = 33
-        Me.Label10.Text = "此2项尚未启用"
+        Me.Label10.Text = "此项尚未启用"
         '
         'DateTimePicker1
         '
@@ -411,6 +411,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ToolsBox"
         Me.ResumeLayout(False)
         Me.PerformLayout()

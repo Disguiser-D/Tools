@@ -17,6 +17,8 @@ int main()
 	printf("|               2.CPU-Z                        |\n");
 	printf("|               3.GPU-Z                        |\n");
 	printf("|               4.国际象棋测试                 |\n");
+	printf("|               5.GPU计算圆周率                |\n");
+	printf("|               6.CPU计算圆周率                |\n");
 	printf("------------------------------------------------\n");
 	short a;
 	cin >> a;
@@ -59,7 +61,15 @@ int main()
 	{
 		system("start Fritz Chess Benchmark.EXE");
 	}
-	else if (a !=2&&a!=3&&a!=4)
+	else if (a == 5)
+	{
+		system("start GPiWindows.exe");
+	}
+	else if (a == 6)
+	{
+		system("start 圆周率π计算分析程序.exe");
+	}
+	else if (a !=2&&a!=3&&a!=4&&a!=5&&a!=6)
 	{
 		printf("ERROR!");
 		Sleep(2000);
