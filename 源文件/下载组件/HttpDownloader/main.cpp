@@ -1,22 +1,30 @@
 ﻿// Test Console.cpp : 定义控制台应用程序的入口点。
 
+#define _CRT_SECURE_NO_WARNINGS
 #include "HttpDownloader.h"
 #include <Windows.h>
 #include <iostream>
+#include <shellapi.h>
 
 
 void main()
 {    
+	void HideCursor();//取消光标闪烁
+	{
+		CONSOLE_CURSOR_INFO cursor_info = { 1, 0 };
+		SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);
+	}
+
 	std::cout << "连接服务器-25%-";
-	Sleep(5000);
+	Sleep(3000);
 	std::cout << "-50%-";
-	Sleep(5000);
+	Sleep(3000);
 	std::cout << "-75%-";
-	Sleep(5000);
+	Sleep(3000);
 	std::cout << "-100%-";
-	Sleep(5000);
+	Sleep(3000);
 	std::cout << "***成功" << std::endl;
-	Sleep(5000);
+	Sleep(3000);
     CHttpDownloader dl;
     bool
 	//第一个下载任务 “主程序”  命名格式| ToolsBoxInstaller-LV X.X.X.X.exe
@@ -42,6 +50,32 @@ void main()
 
 	Sleep(5000);
 	
+	//判断是否有安装包
+	FILE *fp1;//赋值一个打开文件指针
+	if ((fp1 = fopen("ToolsBoxInstaller-LV 1.1.3.exe", "r")) != NULL) //if..else...判断语句.如果fp1文件指针找到文件名为ToolsBoxInstaller-LV 1.1.3.exe的程序则执行下面的代码.
+	{
+		int res = MessageBox(NULL, TEXT("是否安装该程序的更新版本？"), TEXT("更新程序的提醒"), MB_YESNO);//定义一个数值为res，并弹出窗口
+		if (res == IDYES)  //如果res数值为IDYES则执行下列代码
+		{
+			PROCESS_INFORMATION ProcessInfo;
+			STARTUPINFO StartupInfo; //This is an [in] parameter
+			ZeroMemory(&StartupInfo, sizeof(StartupInfo));
+			StartupInfo.cb = sizeof StartupInfo; //Only compulsory field
+			if (CreateProcess("ToolsBoxInstaller-LV 1.1.3.exe", NULL, NULL, NULL, FALSE, 0, NULL, NULL, &StartupInfo, &ProcessInfo))
+			{
+				WaitForSingleObject(ProcessInfo.hProcess, INFINITE);
+				CloseHandle(ProcessInfo.hThread);
+				CloseHandle(ProcessInfo.hProcess);
+			}
+			else
+				MessageBox(NULL, "The process could not be started", NULL, NULL);
+		}
+		else exit(0);   //如果res数值不是IDYES则退出
+	}
+	else //if..else...判断语句.如果fp1文件指针未找到文件名为ToolsBoxInstaller-LV 1.1.3.exe的文件则执行下面的代码.
+	{
+		MessageBoxA(NULL, "暂时未发现更新安装包！", "更新安装包模块", MB_OK);
+	}
 }
 /*
 
