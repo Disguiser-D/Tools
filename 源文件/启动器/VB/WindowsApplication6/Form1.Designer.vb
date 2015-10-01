@@ -54,7 +54,6 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -171,9 +170,10 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(108, 104)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(108, 107)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(109, 15)
+        Me.Label2.Size = New System.Drawing.Size(91, 12)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "初始密码：123456"
         '
@@ -183,7 +183,7 @@ Partial Class Form1
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(75, 23)
         Me.Button13.TabIndex = 13
-        Me.Button13.Text = "其他磁盘工具"
+        Me.Button13.Text = "磁盘工具"
         Me.Button13.UseVisualStyleBackColor = True
         '
         'Button14
@@ -224,6 +224,7 @@ Partial Class Form1
         '
         'Button18
         '
+        Me.Button18.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button18.Location = New System.Drawing.Point(204, 157)
         Me.Button18.Name = "Button18"
         Me.Button18.Size = New System.Drawing.Size(75, 23)
@@ -233,6 +234,7 @@ Partial Class Form1
         '
         'Button19
         '
+        Me.Button19.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button19.Location = New System.Drawing.Point(204, 186)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(75, 23)
@@ -273,7 +275,7 @@ Partial Class Form1
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(75, 23)
         Me.Button23.TabIndex = 25
-        Me.Button23.Text = "Button23"
+        Me.Button23.Text = "视频处理"
         Me.Button23.UseVisualStyleBackColor = True
         '
         'Label3
@@ -315,7 +317,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(285, 162)
+        Me.Label7.Location = New System.Drawing.Point(285, 166)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(55, 15)
         Me.Label7.TabIndex = 30
@@ -324,7 +326,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(285, 191)
+        Me.Label8.Location = New System.Drawing.Point(285, 194)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(55, 15)
         Me.Label8.TabIndex = 31
@@ -338,15 +340,6 @@ Partial Class Form1
         Me.Label9.Size = New System.Drawing.Size(55, 15)
         Me.Label9.TabIndex = 32
         Me.Label9.Text = "谨慎使用"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(285, 279)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(79, 15)
-        Me.Label10.TabIndex = 33
-        Me.Label10.Text = "此项尚未启用"
         '
         'DateTimePicker1
         '
@@ -374,7 +367,6 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(707, 361)
         Me.ControlBox = False
         Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -448,7 +440,6 @@ Partial Class Form1
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Button11 As System.Windows.Forms.Button
 
