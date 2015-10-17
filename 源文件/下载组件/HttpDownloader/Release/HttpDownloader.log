@@ -1,4 +1,4 @@
-﻿生成启动时间为 2015/9/18 21:03:59。
+﻿生成启动时间为 2015/10/17 16:55:07。
      1>项目“C:\Users\TZY\Documents\GitHub\Tools-\源文件\下载组件\HttpDownloader\HttpDownloader.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt HttpDownloader.cpp main.cpp
@@ -14,4 +14,4 @@
 
 生成成功。
 
-已用时间 00:00:02.29
+已用时间 00:00:03.09

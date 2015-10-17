@@ -79,7 +79,7 @@
         Shell("HttpDownloader.exe", "1")
     End Sub
     Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
-        Shell("video.exe", "1")
+        Shell("SF/video.exe", "1")
     End Sub
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
 

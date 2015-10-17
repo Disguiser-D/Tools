@@ -1,1 +1,1 @@
-c:\zmpeg\zmpeg.exe -ss 00:00:15 -t 00:00:25 -i c:\1\01.mp4 c:\2\02.mp4&&exit
+zmpeg  -i c:\1\01.mp4 -f mpeg  videotemp1.mpg&&zmpeg  -i c:\2\02.mp4 -f mpeg videotemp2.mpg&&copy /b "videotemp1.mpg"+"videotemp2.mpg" videotemp3.mpg&&zmpeg -i "videotemp3.mpg" -f mp4 "c:\4"

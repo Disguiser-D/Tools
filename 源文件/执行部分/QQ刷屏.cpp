@@ -44,7 +44,7 @@ int main()
 		while (T2 <= T1)
 		{
 			++T2;
-			Sleep(10);//Simulation of quiet
+			Sleep(80);//Simulation of quiet
 			keybd_event(0x11, 0, 0, 0);// press ctrl
 			keybd_event(0x56, 0, 0, 0); // press v
 			keybd_event(0x56, 0, 2, 0); //release v
@@ -63,7 +63,7 @@ int main()
 		while (T2 <= T1)
 		{
 			++T2;
-			Sleep(10);//Simulation of quiet
+			Sleep(80);//Simulation of quiet
 			keybd_event(0x11, 0, 0, 0);// press ctrl
 			keybd_event(0x56, 0, 0, 0); // press v
 			keybd_event(0x56, 0, 2, 0); //release v
