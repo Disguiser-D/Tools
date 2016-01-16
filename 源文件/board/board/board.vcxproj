@@ -79,11 +79,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\下载组件\HttpDownloader\HttpDownloader.h" />
+    <ClCompile Include="..\..\下载组件\HttpDownloader\HttpDownloader.cpp" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\下载组件\HttpDownloader\HttpDownloader.cpp" />
-    <ClCompile Include="..\..\下载组件\HttpDownloader\main.cpp" />
+    <ClInclude Include="HttpDownloader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,2 +1,0 @@
-C:\Users\TZY\Documents\GitHub\Tools-\源文件\电脑配置VB\电脑配置\电脑配置\obj\Debug\电脑配置.Resources.resources
-C:\Users\TZY\Documents\GitHub\Tools-\源文件\电脑配置VB\电脑配置\电脑配置\obj\Debug\电脑配置.vbproj.GenerateResource.Cache

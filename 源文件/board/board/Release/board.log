@@ -1,12 +1,12 @@
-﻿生成启动时间为 2015/10/17 16:37:12。
+﻿生成启动时间为 2015/11/21 19:49:59。
      1>项目“C:\Users\TZY\Documents\GitHub\Tools-\源文件\board\board\board.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\下载组件\HttpDownloader\HttpDownloader.cpp" "..\..\下载组件\HttpDownloader\main.cpp"
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\下载组件\HttpDownloader\HttpDownloader.cpp" "源.cpp"
          HttpDownloader.cpp
-         main.cpp
+         源.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\TZY\Documents\GitHub\Tools-\源文件\board\Release\board.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\TZY\Documents\GitHub\Tools-\源文件\board\Release\board.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\TZY\Documents\GitHub\Tools-\源文件\board\Release\board.lib" /MACHINE:X86 /SAFESEH Release\HttpDownloader.obj
-         Release\main.obj
+         "Release\源.obj"
          正在生成代码
          已完成代码的生成
          board.vcxproj -> C:\Users\TZY\Documents\GitHub\Tools-\源文件\board\Release\board.exe
@@ -14,4 +14,4 @@
 
 生成成功。
 
-已用时间 00:00:04.70
+已用时间 00:00:05.67

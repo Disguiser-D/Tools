@@ -17,6 +17,7 @@ int main()
 	printf("|              2.启动系统桌面进程              |\n");
 	printf("|              3.关闭系统输入法进程            |\n");
 	printf("|              4.启动桌面输入法进程            |\n");
+	printf("|              5.系统用户助手			   	   |\n");
 	printf("------------------------------------------------\n");
 	short num1;
 	printf("请输入您的选项后并摁回车继续：");
@@ -110,5 +111,9 @@ int main()
 		system("start W:\\Windows\\ctfmon.exe");
 		keybd_event(VK_RETURN, 0, 0, 0);
 		keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
+	}
+	else if (num1 == 5)
+	{
+		system("start 用户工具.bat");
 	}
 }
