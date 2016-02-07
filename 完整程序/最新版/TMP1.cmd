@@ -1,0 +1,1 @@
+C:\zmpeg\zmpeg.exe -ss 00:00:00 -t 00:00:30 -i C:\1\01.avi C:\2\02.avi&&exit
